@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 500px;
+
+    position: relative;
+    /* nomi */
+    animation-name: lorem;
+    /* davomiligi */
+    animation-duration: 5s;
+    /* kutish vaqti */
+    animation-delay: 0s;
+    /* animation soni= infinte (cheksiz) */
+    animation-iteration-count: infinite;
+    /* yo'nalish */
+    animation-direction : alternate;
+    /* animation holati */
+    animation-timing-function: linear;
+    /* animation to - holatida qoladi */
+    animation-fill-mode: forwards;
+}
+@keyframes lorem {
+    0%{
+        left: 0;
+        top: 0;
+        border-radius: 50% 0 50% 0;
+        background-color: goldenrod;
+    }
+    25%{
+        left: 500px;
+        top: 0;
+        background-color: red;
+        border-radius: 60% 0 60% 0;
+    }
+    50%{
+        left: 500px;
+        top: 500px;
+        background-color: aqua;
+        border-radius: 0 75% 0 75%;
+    }
+    75%{
+        left: 0;
+        top: 500px;
+        background-color: darkblue;
+        border-radius: 48% 0 15% 0;
+    }
+    100%{
+        left: 0;
+        top: 0;
+        background-color: blueviolet;
+        border-radius: 88% 0 95% 0;
+    }
+}
+/* @keyframes lorem {
+    from{
+        left: 0;
+        border-radius: 80px 0 80px 0;
+        background-color: red;
+    }
+    to{
+        left: 0px;
+        border-radius: 0 80px 0 80px;
+        background-color: blue;
+    } */
+}
